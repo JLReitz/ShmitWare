@@ -1,0 +1,32 @@
+[
+    {
+        "name": "GCC 10.3.1 arm-none-eabi",
+        "compilers": {
+            "C": "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc",
+            "CXX": "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++"
+        },
+        "isTrusted": true
+    },
+    {
+        "name": "native",
+        "compilers": {
+            "C": "gcc",
+            "CXX": "g++"
+        },
+        "cmakeSettings": {
+            "SHMITWARE_TARGET_PLATFORM": "native"
+        },
+        "isTrusted": true
+    },
+    {
+        "name": "atmel",
+        "compilers": {
+            "C": "avr-gcc",
+            "CXX": "avr-g++"
+        },
+        "cmakeSettings": {
+            "SHMITWARE_TARGET_PLATFORM": "atmel"
+        },
+        "isTrusted": true
+    }
+]

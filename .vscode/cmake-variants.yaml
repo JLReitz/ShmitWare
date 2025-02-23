@@ -1,0 +1,27 @@
+buildType:
+  default: debug
+  description: I'm not in to labels but... what kind of build are you looking for?
+  choices:
+    debug:
+      short: Debug
+      long: Optimize build for debugging, include all symbols
+      buildType: Debug
+    release:
+      short: Release
+      long: Optimize build for releases
+      buildType: Release
+
+std:
+  default: c++17
+  description: Even languages have standards. The bar is higher than you know.
+  choices:
+    c++17:
+      short: --std=c++17
+      long: Compile for and link with the C++17 standard
+      settings:
+        CXX_STANDARD: c++17
+    c++14:
+      short: --std=c++14
+      long: Compile for and link with the C++14 standard
+      settings:
+        CXX_STANDARD: c++14
