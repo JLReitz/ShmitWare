@@ -20,7 +20,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_subdirectory(Development/ShmitCore)
+add_subdirectory(Development/Core)
 
 # set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 # set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

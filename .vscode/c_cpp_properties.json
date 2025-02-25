@@ -1,7 +1,7 @@
 {
     "env": {
-        "Include_Shmitcore": "${workspaceFolder}/Development/ShmitCore/Include",
-        "Include_Shmitport": "${workspaceFolder}/Development/ShmitPort/Include",
+        "Development_Includes": "${workspaceFolder}/Development/Include",
+        "ShmitPort_Root": "${workspaceFolder}/Development/Port",
         "Native_Defines": [
             "NATIVE_SHMIT"
         ]
@@ -10,7 +10,8 @@
         {
             "name": "native-c++17",
             "includePath": [
-                "${Include_Shmitcore}"
+                "${Development_Includes}",
+                "${ShmitPort_Root}/Native"
             ],
             "defines": [
                 "${Native_Defines}"
@@ -24,7 +25,8 @@
         {
             "name": "native-c++14",
             "includePath": [
-                "${Include_Shmitcore}"
+                "${Development_Includes}",
+                "${ShmitPort_Root}/Native"
             ],
             "defines": [
                 "${Native_Defines}"
@@ -34,6 +36,17 @@
             "cppStandard": "c++14",
             "intelliSenseMode": "linux-gcc-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "zephyr-c++17",
+            "includePath": [
+                "${Development_Includes}",
+                "${ShmitPort_Root}/Zephyr"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
         }
     ],
     "version": 4
